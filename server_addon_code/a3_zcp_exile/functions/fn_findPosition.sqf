@@ -7,7 +7,7 @@ if(_baseRadius > _distanceFromObjects) then {
 	_distanceFromObjects = _baseRadius;
 };
 
-_safepos		= [ZCP_MapCenterPos, 0, ZCP_MapRadius, _distanceFromObjects, 0, _terrainGradientPos, 0];
+_safepos		= [ZCP_MapCenterPos, 0, ZCP_MapRadius, 0, 0, _terrainGradientPos, 0];
 diag_log _safepos;
 _validspot 	= false;
 while{!_validspot} do {
